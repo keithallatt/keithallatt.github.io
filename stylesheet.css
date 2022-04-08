@@ -1,0 +1,59 @@
+body {
+ background-color: black;
+ margin: 4%;
+ padding: 2%;
+ color: #2f2;
+ font-family: "Courier";
+}
+
+.divbox {
+ display: flex;
+}
+
+hr { border-color: inherit }
+
+.topname {
+font-family: "Roboto";
+font-size: 3em;
+}
+
+p {
+ font-family: "Courier";
+ font-size: 1.5em;
+}
+p:last-of-type {
+ animation: type 0.5s infinite;
+}
+@keyframes type{
+ to { opacity: .0; }
+}
+
+/* Social Media ICONS */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Twitter */
+.fa-github {
+  background: #222222;
+  color: white;
+}
