@@ -3,10 +3,87 @@
   <head>
     <meta charset="utf-8">
     <title>Keith Allatt; Software Developer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+         background-color: black;
+      }
+
+      .divbox {
+         display: flex;
+         margin: 4%;
+         padding: 2%;
+      }
+      p {
+         font-family: "Courier Monospace";
+         font-size: 2em;
+         color: green;
+      }
+      p:last-of-type {
+         animation: type 0.33s infinite;
+      }
+      @keyframes type{
+         to { opacity: .0; }
+      }
+    </style>
+
   </head>
   <body>
-    <h1>Hi!</h1>
-  
-    This is my initial commit of my portfolio website.
+
+<div class="divbox">
+<p id="text"></p>
+<p>|</p>
+</div>
+<script>
+const words = ["Software developer", "Musician", "Mathematician"];
+let i = 0;
+let counter;
+let keyHitDelay = 75;
+let keyDeleteDelay = 40;
+let swapHoldDelay = 1000;
+let swapBackDelay = 500;
+function typeNow() {
+   let word = words[i].split("");
+   var loopTyping = function() {
+      if (word.length > 0) {
+         document.getElementById('text').innerHTML += word.shift();
+      } else {
+         // deleteNow();
+         counter = setTimeout(deleteNow, swapHoldDelay);
+
+         return false;
+      };
+      counter = setTimeout(loopTyping, keyHitDelay);
+   };
+   loopTyping();
+};
+function deleteNow() {
+   let word = words[i].split("");
+   var loopDeleting = function() {
+      if (word.length > 0) {
+         word.pop();
+         document.getElementById('text').innerHTML = word.join("");
+      } else {
+         if (words.length > (i + 1)) {
+            i++;
+         }
+         else {
+            i = 0;
+         };
+         counter = setTimeout(typeNow, swapBackDelay);
+         return false;
+      };
+      counter = setTimeout(loopDeleting, keyDeleteDelay);
+   };
+   loopDeleting();
+};
+typeNow();
+</script>
+
+
   </body>
 </html>
