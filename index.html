@@ -11,20 +11,28 @@
     <style>
       body {
          background-color: black;
-      }
+         margin: 4%;
+         padding: 2%;
+         color: #2f2;
+     }
 
       .divbox {
          display: flex;
-         margin: 4%;
-         padding: 2%;
       }
+
+      hr { border-color: inherit }
+
+      .topname {
+        font-family: "Roboto";
+        font-size: 3em;
+      }
+
       p {
-         font-family: "Courier Monospace";
-         font-size: 2em;
-         color: green;
+         font-family: "Courier";
+         font-size: 1.5em;
       }
       p:last-of-type {
-         animation: type 0.33s infinite;
+         animation: type 0.5s infinite;
       }
       @keyframes type{
          to { opacity: .0; }
@@ -33,57 +41,19 @@
 
   </head>
   <body>
+    <h1 class="topname">Keith Allatt - Junior Software Developer</h1>
+    <p style="margin-bottom:1cm;"></p>
 
-<div class="divbox">
-<p id="text"></p>
-<p>|</p>
-</div>
-<script>
-const words = ["Software developer", "Musician", "Mathematician"];
-let i = 0;
-let counter;
-let keyHitDelay = 75;
-let keyDeleteDelay = 40;
-let swapHoldDelay = 1000;
-let swapBackDelay = 500;
-function typeNow() {
-   let word = words[i].split("");
-   var loopTyping = function() {
-      if (word.length > 0) {
-         document.getElementById('text').innerHTML += word.shift();
-      } else {
-         // deleteNow();
-         counter = setTimeout(deleteNow, swapHoldDelay);
+    <div class="divbox">
+      <p>kallatt@linux:~$&nbsp;git clone https://github.com/keithallatt/</p>
+      <p id="text"></p>
+      <p>&#9608;</p>
+    </div>
 
-         return false;
-      };
-      counter = setTimeout(loopTyping, keyHitDelay);
-   };
-   loopTyping();
-};
-function deleteNow() {
-   let word = words[i].split("");
-   var loopDeleting = function() {
-      if (word.length > 0) {
-         word.pop();
-         document.getElementById('text').innerHTML = word.join("");
-      } else {
-         if (words.length > (i + 1)) {
-            i++;
-         }
-         else {
-            i = 0;
-         };
-         counter = setTimeout(typeNow, swapBackDelay);
-         return false;
-      };
-      counter = setTimeout(loopDeleting, keyDeleteDelay);
-   };
-   loopDeleting();
-};
-typeNow();
-</script>
+    <hr>
 
 
+
+    <script src="git_repo.js" defer></script>
   </body>
 </html>
