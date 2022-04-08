@@ -2,6 +2,10 @@ function addDotGit(string) {
   return string + ".git";
 }
 
+function getURLByGitName(name) {
+    return "https://github.com/keithallatt/" + name;
+}
+
 const repoNames = ["CustomIDE", "LaTeXWorkSheets", "Logic", "JavaTeX", "auto-update-project"];
 const words = repoNames.map(addDotGit);
 
@@ -11,8 +15,11 @@ let keyHitDelay = 75;
 let keyDeleteDelay = 40;
 let swapHoldDelay = 1000;
 let swapBackDelay = 500;
+
 function typeNow() {
    let word = words[i].split("");
+   document.getElementById('changelink').href = getURLByGitName(words[i]);
+
    var loopTyping = function() {
       if (word.length > 0) {
          document.getElementById('text').innerHTML += word.shift();
