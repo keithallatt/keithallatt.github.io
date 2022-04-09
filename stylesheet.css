@@ -7,8 +7,13 @@ body {
 }
 
 .divbox {
- display: flex;
+    display: flex;
 }
+
+.divbox:hover {
+    text-decoration: underline;
+}
+
 
 hr { border-color: inherit }
 
@@ -18,21 +23,38 @@ font-size: 2.5em;
 }
 
 .hiddenlink {
-    color: #2f2
+    color: #2f2;
+}
+
+.hiddenlink:link {
+    text-decoration: none;
+    color: #2f2;
+}
+
+.hiddenlink:visited {
+    text-decoration: none;
+    color: #2f2;
 }
 
 .hiddenlink:hover {
-    color: #838
+    text-decoration: none;
+    color: #2f2;
 }
 
-p {
+.hiddenlink:active {
+    text-decoration: none;
+    color: #2f2;
+}
+
+span {
  font-family: "Courier";
  font-size: 1.25em;
 }
 
-p:last-of-type {
+.flashing {
  animation: type 0.5s infinite;
 }
+
 @keyframes type{
  to { opacity: .0; }
 }
