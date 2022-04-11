@@ -102,3 +102,24 @@ figcaption {
   background: #222222;
   color: white;
 }
+
+
+
+/* Responsive CSS */
+
+div.imgcontainer {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 20cm) {
+    img.responsive {
+
+    }
+
+    div.responsive {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+}

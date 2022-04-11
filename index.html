@@ -9,8 +9,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -39,14 +40,16 @@
 
     <hr>
 
-    <div style="width:35%; float: left;">
+    <div class="responsive" style="max-width: 30%; float: left;">
       <figure>
-        <img src="PortfolioImage1.JPG" style="width:100%;" />
+        <div class="imgcontainer">
+          <img src="PortfolioImage1.JPG" style="max-width:100%;"  class="responsive"/>
+        </div>
         <figcaption>Photo courtesy of Rishana Bal; (<a href="https://www.linkedin.com/in/rishana-bal-1809a5173/" target="_blank">LinkedIn</a>).</figcaption>
       </figure>
 
     </div>
-    <div style="width: 60%; float: left;">
+    <div class="responsive" style="max-width: 67%; float: left;">
       <p>
         Hi! My name is Keith Allatt, and I am a mathematician and software developer.
       </p>
@@ -62,11 +65,14 @@
         otherwise unrelated areas, but these programs are useful for developing
         efficient algorithms that are easy to update and maintain.
       </p>
+
+      <div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/keith-allatt-a83907178/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/keithallatt" class="fa fa-github"></a>
+      </div>
     </div>
-    <div style="text-align:center">
-      <a href="https://www.linkedin.com/in/keith-allatt-a83907178/" class="fa fa-linkedin"></a>
-      <a href="https://github.com/keithallatt" class="fa fa-github"></a>
-    </div>
+
+
     <script src="git_repo.js" defer></script>
   </body>
 </html>
