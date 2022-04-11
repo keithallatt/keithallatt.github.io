@@ -89,37 +89,34 @@ figcaption {
   opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
+/* Set a specific color for each social media */
+/* LinkedIN */
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
 
-/* Twitter */
+/* GitHub */
 .fa-github {
   background: #222222;
   color: white;
 }
 
-
-
 /* Responsive CSS */
-
 div.imgcontainer {
   display: inline-block;
 }
 
 @media only screen and (max-width: 20cm) {
-    img.responsive {
-
-    }
+    img.responsive {}
 
     div.responsive {
         width: 100%;
         max-width: 100%;
         min-width: 100%;
+    }
 
+    .divbox {
+        display: none;
     }
 }
