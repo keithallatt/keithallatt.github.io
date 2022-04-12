@@ -1,8 +1,8 @@
 body {
- background-color: black;
+ background-color: #111;
  margin: 4%;
  padding: 2%;
- color: #2f2;
+ color: #66f;
  font-family: "Courier";
 }
 
@@ -19,27 +19,27 @@ hr { border-color: inherit }
 
 
 .hiddenlink {
-    color: #2f2;
+    color: inherit;
 }
 
 .hiddenlink:link {
     text-decoration: none;
-    color: #2f2;
+    color: inherit;
 }
 
 .hiddenlink:visited {
     text-decoration: none;
-    color: #2f2;
+    color: inherit;
 }
 
 .hiddenlink:hover {
     text-decoration: none;
-    color: #2f2;
+    color: inherit;
 }
 
 .hiddenlink:active {
     text-decoration: none;
-    color: #2f2;
+    color: inherit;
 }
 
 span {
@@ -71,6 +71,11 @@ figcaption {
 
 summary {
     display: list-item;
+}
+
+code {
+    color: inherit;
+    background-color: #050505;
 }
 
 /* Social Media ICONS */
