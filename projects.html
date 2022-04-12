@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Markdown to HTML Converter Script. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -28,11 +31,17 @@
       </div>
     </nav>
 
-    <br />
-    <br />
-    <div style="text-align:center">
-      <a href="https://www.linkedin.com/in/keith-allatt-a83907178/" class="fa fa-linkedin"></a>
-      <a href="https://github.com/keithallatt" class="fa fa-github"></a>
-    </div>
+    <details>
+      <summary>Auto Update Project.</summary>
+      <div id="autocomplete"></div>
+    </details>
+
+    <details>
+      <summary>Custom Integrated Development Environment.</summary>
+      <div id="customide"></div>
+    </details>
+
+    <script src="md_to_html.js" defer></script>
+
   </body>
 </html>
