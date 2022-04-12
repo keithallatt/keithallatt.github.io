@@ -90,6 +90,11 @@ code {
 }
 
 /* Add a hover effect if you want */
+[class*=" fa-"] {
+    display: inline-block;
+    width: 10%;
+}
+
 .fa:hover {
   opacity: 0.7;
 }
@@ -106,6 +111,14 @@ code {
   background: #222222;
   color: white;
 }
+
+
+/* Email */
+.fa-envelope {
+  background: #774433;
+  color: white;
+}
+
 
 /* Responsive CSS */
 div.imgcontainer {
