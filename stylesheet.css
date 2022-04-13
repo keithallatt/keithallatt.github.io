@@ -2,8 +2,13 @@ body {
  background-color: #111;
  margin: 4%;
  padding: 2%;
- color: #66f;
+ color: #88f;
  font-family: "Courier";
+ font-size: 15pt;
+}
+
+.indented {
+    text-indent: 40pt;
 }
 
 .divbox {
@@ -75,7 +80,7 @@ summary {
 
 code {
     color: inherit;
-    background-color: #050505;
+    background-color: #444;
 }
 
 /* Social Media ICONS */
