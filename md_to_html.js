@@ -26,5 +26,5 @@ function addReadMe(document_id) {
     };
 }
 
-const repo_array = ["auto-updtttate-project", "CustomIDE", "logisim-cpu", "Logic", "GameTools"];
+const repo_array = ["auto-update-project", "CustomIDE", "logisim-cpu", "Logic", "GameTools"];
 repo_array.forEach(element => addReadMe(element));
