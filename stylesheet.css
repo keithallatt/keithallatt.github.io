@@ -140,7 +140,7 @@ img.responsive {
         min-width: 100%;
     }
 
-    .divbox {
+    div.disappear {
         display: none;
     }
 }
