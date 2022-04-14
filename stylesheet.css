@@ -85,6 +85,12 @@ code {
     background-color: #444;
 }
 
+pre {
+    text-align: center;
+    color: inherit;
+    background-color: inherit;
+}
+
 /* Social Media ICONS */
 
 .fa {

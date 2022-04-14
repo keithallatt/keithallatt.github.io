@@ -13,6 +13,10 @@ function addReadMe(document_id) {
         if (xhr.status == 200) {
             doc_element.innerHTML = converter.makeHtml(`${xhr.response}`);
 
+            if (document_id === "GameTools") {
+                alert(doc_element.innerHTML);
+            }
+
             // replace `<img src="` with `<img src="https://github.com/kallatt/img file` type
             // thing in html to make images work.
         } else {
